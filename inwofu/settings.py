@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1g2b8m4j0np2ez0yb@0qt2auw=+3p3+y@x-m**m^d=9w$tsb97'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # inwofu/settings.py
 import os
