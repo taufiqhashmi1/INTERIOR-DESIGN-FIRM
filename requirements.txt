@@ -1,0 +1,6 @@
+Django
+gunicorn
+django-tailwind
+django-browser-reload
+Pillow
+python-decouple
