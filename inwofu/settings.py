@@ -26,13 +26,19 @@ SECRET_KEY = 'django-insecure-1g2b8m4j0np2ez0yb@0qt2auw=+3p3+y@x-m**m^d=9w$tsb97
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# inwofu/settings.py
+import os
+
 ALLOWED_HOSTS = [
     # For local development
     '127.0.0.1',
     'localhost',
+    
+    # ADD YOUR FINAL VERCEL DOMAIN HERE
+    'interior-design-firm.vercel.app',
 ]
 
-# Get the Vercel URL from environment variables and add it to the list
+# Keep this part for automatic preview URLs
 VERCEL_URL = os.environ.get('VERCEL_URL')
 if VERCEL_URL:
     ALLOWED_HOSTS.append(VERCEL_URL)
