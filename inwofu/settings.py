@@ -32,13 +32,10 @@ ALLOWED_HOSTS = [
     'localhost',
 ]
 
-# Get the Vercel URL from environment variables
+# Get the Vercel URL from environment variables and add it to the list
 VERCEL_URL = os.environ.get('VERCEL_URL')
-
 if VERCEL_URL:
-    # The Vercel URL is a full URL, we only need the hostname
-    # Example: https://my-site-ashy.vercel.app/ -> my-site-ashy.vercel.app
-    ALLOWED_HOSTS.append(VERCEL_URL.split('//')[1])
+    ALLOWED_HOSTS.append(VERCEL_URL)
 
 # Application definition
 
